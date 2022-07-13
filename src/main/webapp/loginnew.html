@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .bodyimage{
+    background: url('background_1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-color: aquamarine;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.form{
+    width: 200px;
+    height:260px;
+    margin:5% 40%;
+    display: flex;
+    background-color: gray;
+    opacity: 0.8;
+    box-shadow: 0 0 20px;
+    align-items: center;
+    border-radius:10px;
+}
+.form h2{
+    margin-top: 20px;
+    margin:8px;
+    text-align: center;
+    color: rgb(245, 241, 238);
+    font-family:'Courier New', Courier, monospace;
+    border-bottom: 2px solid orange;
+    border-radius: 7px;
+    text-shadow: 1px black;
+}
+.form input{
+    width:190px;
+    height:30px;
+    margin-left: 7px;
+   padding-left: 10px;
+    border-top:none;
+    color:white;
+    border-bottom: 1px soild rgb(134, 143, 5);
+    border-radius: 4px;
+    background: black;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+
+}
+.btn{
+    width: 160px;
+    height: 30px;
+    background: orange;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+        </style>
+        
+        <title>Bank Employee Login</title>
+    </head>
+    <body class="bodyimage">
+        <div class="form">
+            <form method="post" action="./login">
+            <h2>Login</h2>
+            <input type="text" name="username" required placeholder="Enter User ID:">
+            <input type="password" name="userpassword"  required placeholder="pasword">
+            <button class="btn" type="submit">Login</button>
+        </form>
+            
+        
+        </div>
+</body>
+</html>
